@@ -1,0 +1,522 @@
+html {
+    position: relative;
+}
+
+body {
+    font-family: Jaldi, Jomhuria;
+    margin-bottom: 130px;
+}
+
+.nav-color {
+    background-color: #00013d;
+    transition: all ease-in-out .5s;
+}
+
+.bg-transparent {
+    transition: all ease-in-out .3s;
+}
+
+
+/* Mobile Version */
+@media (max-width: 768px) {
+
+    /* Navbar */
+
+    .nav .container {
+        position: fixed;
+    }
+
+    .nav .navbar .navbar-toggler {
+        justify-content: space-between;
+        border-color: #00FFFF;
+    }
+
+    .nav .navbar-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .nav .navbar .navbar-nav {
+        background-color: #020069;
+        width: 100%;
+    }
+
+    .nav .navbar .navbar-nav a {
+        font-family: Jaldi;
+        font-size: 15px;
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+    }
+
+
+
+    /* showcase */
+    
+    .jumbotron {
+        background-image: url(../img/bg.png);
+        background-size: cover;
+        height: 432px;
+    }
+
+    .jumbotron h1, p {
+        text-align: center;
+    }
+
+    .jumbotron h1 {
+        font-family: Jomhuria;
+        font-size: 50px;
+        color: #fff;
+        padding-top: 170px;
+        letter-spacing: 7px;
+    }
+
+    .jumbotron .sec {
+        color: #00FFFF;
+        margin-top: -210px;
+    }
+
+    .jumbotron .container p {
+        font-size: 12px;
+        font-family: Jaldi;
+        color: #fff;
+        margin-top: -25px;
+    }
+
+    .jumbotron .pic {
+        display: none;
+    }
+
+    .jumbotron .more {
+        display: none;
+    }
+
+
+    /* About */
+
+    .about {
+        margin-top: 300px;
+        min-height: 100vh;
+        color: #fff;
+    }
+
+    .about h2 {
+        text-align: center;
+        font-family: Jomhuria;
+        font-size: 45px;
+    }
+
+    .about hr {
+        border-bottom: 2px solid #00ffff;
+        width: 90px;
+        margin: auto;
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+
+    .about .content h3 {
+        font-family: Jaldi;
+        font-size: 22px;
+    }
+
+    .about .content p,ul {
+        font-family: Jaldi;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+
+    /* Category */
+
+    .category {
+        margin-top: 130px;
+        min-height: 100vh;
+        color: #fff;
+    }
+
+    .category .header h2 {
+        text-align: center;
+        font-family: Jomhuria;
+        font-size: 45px;
+    }
+
+    .category .header hr {
+        color: #00FFFF;
+        border-bottom: 2px solid #00FFFF;
+        width: 120px;
+        margin: auto;
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+
+    .category .container {
+        background-color: #0066ff;
+        height: 250px;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .category .container .choose img {
+        height: 80px;
+        margin: 15px;
+    }
+
+    .category .container .choose a {
+        color: #fff;
+        text-decoration: none;
+        font-family: Jaldi;
+        font-size: 25px;
+        margin: auto;
+    }
+
+    .category .container .choose a::after {
+        content: '';
+        border-bottom: 2px solid #00ffff;
+        width: 0;
+        margin: auto;
+        display: block;
+        transition: all ease .3s;
+    }
+
+    .category .container .choose a:hover::after {
+        content: '';
+        width: 70px;
+    }
+
+
+    /* Comment */
+
+    .comment {
+        min-height: 100vh;
+        margin-bottom: 80px;
+    }
+
+    .comment .header h2 {
+        font-family: Jomhuria;
+        font-size: 45px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .comment .header hr {
+        color: #00FFFF;
+        border-bottom: 2px solid #00FFFF;
+        width: 120px;
+        margin: auto;
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+
+    .comment .container .form-group label {
+        color: #fff;
+        font-family: Jaldi;
+        font-size: 15px;
+    }
+
+    .comment .container .form-group, .comment .container .form-select {
+        margin-top: 7px;
+    }
+
+    .comment .container button {
+        color: #fff;
+        margin-top: 10px;
+        background: #020069;
+        border: 2px solid #fff;
+        width: 80px;
+        border-radius: 10px;
+        float: right;
+    }
+
+
+    /* footer */
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(#02006900,#006369);
+    }
+
+    footer .container {
+        text-align: center;
+        font-family: Jaldi;
+        font-size: 8px;
+        color: #fff;
+        padding-top: 50px;
+    }
+
+    footer .icon {
+        margin-top: -20px;
+        font-size: 15px;
+    }
+
+    footer .icon a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+}
+
+
+
+
+
+/* Dekstop Version*/
+
+@media (min-width: 992px) {
+    /* Navbar Dekstop */
+
+    .navbar-nav {
+        margin-left: auto;
+        font-family: Jaldi;
+        font-size: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        color: #fff !important;
+    }
+
+    .navbar-nav .nav-link::after {
+        content: '';
+        display: block;
+        border-bottom: 2px solid #00FFFF;
+        width: 0;
+        transition: 0.5s all ease;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+        content: '';
+        width: 100%;
+    }
+
+
+    /* Showcase */
+
+.jumbotron {
+    background-image: url(../img/bg.png);
+    height: 490px;
+    background-size: cover;
+}
+
+.jumbotron h1 {
+    font-family: Jomhuria;
+    color: #fff;
+    padding-top: 130px;
+    margin-left: 60px;
+    font-size: 100px;
+    letter-spacing: 13px;
+}
+
+.jumbotron .sec {
+    margin-top: -200px;
+    color: #00FFFF;
+}
+
+.jumbotron p {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+.jumbotron .pic img {
+    float: right;
+    height: 300px;
+    margin-top: -250px;
+}
+
+.jumbotron .more {
+    border: 3px solid #fff;
+    background-color: #020069;
+    height: 40px;
+    width: 220px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 123px auto;
+    transition: all 0.4s ease;
+}
+
+.jumbotron .more:hover {
+    scale: 1.1;
+}
+
+.jumbotron .more a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Jaldi;
+    font-size: 20px;
+}
+
+
+    /* About */
+
+    .about {
+        margin-top: 300px;
+        min-height: 100vh;
+    }
+
+    .about h2 {
+        font-family: Jomhuria;
+        font-size: 70px;
+        text-align: center;
+        margin-bottom: -20px;
+        color: #fff;
+    }
+
+    .about hr {
+        width: 200px;
+        border-bottom: 4px solid #00ffff;
+        margin: auto;
+    }
+
+    .about .content {
+        margin-top: 70px;
+        font-family: Jaldi;
+        font-size: 20px;
+        color: #fff;
+    }
+
+
+    /* Category */
+
+    .category {
+        min-height: 100vh;
+    }
+
+    .category .header h2 {
+        font-family: Jomhuria;
+        font-size: 70px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: -20px;
+    }
+
+    .category hr {
+        width: 200px;
+        border-bottom: 4px solid #00ffff;
+        margin: auto;
+    }
+
+    .category .container {
+        position: relative;
+        width: 600px;
+        height: 300px;
+        border-radius: 10px;
+        background: #0066ff;
+        margin: 70px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .category .choose {
+        margin: -3px auto;
+    }
+
+    .category .choose img {
+        height: 80px;
+        margin-top: 90px;
+        margin-bottom: 10px;
+    }
+
+    .category .choose .in a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Jaldi;
+        font-size: 20px;
+    }
+
+    .category .choose .in a::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #00FFFF;
+        width: 0;
+        margin: auto;
+        transition: .3s all ease;
+    }
+
+    .category .choose .in a:hover::after {
+        content: '';
+        width: 100%;
+    }
+
+
+    /* Comment*/
+
+    .comment {
+        min-height: 900px;
+    }
+
+    .comment .header h2 {
+        color: #fff;
+        font-family: Jomhuria;
+        font-size: 70px;
+        text-align: center;
+        margin-bottom: -20px;
+    }
+
+    .comment .header hr {
+        width: 200px;
+        border-bottom: 4px solid #00ffff;
+        margin: auto;
+    }
+
+    .comment .box form {
+        color: #fff;
+        font-family: Jaldi;
+        font-size: 20px;
+    }
+
+    .comment .container {
+        margin-top: 70px;
+    }
+
+    .comment .container .col-lg-10 form {
+        margin-left: 200px;
+    }
+
+    .comment .container .form-group, .comment .container .form-select {
+        margin-top: 7px;
+    }
+
+    .comment .container button {
+        color: #fff;
+        margin-top: 10px;
+        background: #020069;
+        border: 2px solid #fff;
+        width: 80px;
+        border-radius: 10px;
+        float: right;
+    }
+
+
+    /* Footer */
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 130px;
+        background: linear-gradient(#02006900,#006369);
+    }
+
+    footer .container {
+        text-align: center;
+        font-family: Jaldi;
+        font-size: 15px;
+        color: #fff;
+        padding-top: 35px;
+    }
+
+    footer .icon {
+        margin-top: -20px;
+        font-size: 40px;
+    }
+
+    footer .icon a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+
